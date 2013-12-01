@@ -45,6 +45,13 @@ apt-get update -q
 apt-get install lxc-docker -y
 chmod u+s /usr/bin/docker
 
+apt-get install git -y
+apt-get install python-pip -y
+git clone https://github.com/toscanini/maestro.git
+cd maestro
+sudo pip install -r requirements.txt 
+sudo python setup.py install
+
 for i in $DOCKER/*
 do
   CONTAINER=`basename $i`
