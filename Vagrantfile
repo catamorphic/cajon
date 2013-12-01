@@ -24,6 +24,10 @@ Vagrant.configure("2") do |config|
   # marketing site
   config.vm.network "forwarded_port", guest: 5000, host: 5000
 
+  # mongo
+  config.vm.network "forwarded_port", guest: 27017, host: 27017
+  config.vm.network "forwarded_port", guest: 28017, host: 28017    
+
   config.vm.provision :shell, :inline => <<PROVISION
 SHARE=/vagrant
 DOCKER=$SHARE/containers
