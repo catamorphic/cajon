@@ -1,0 +1,1 @@
+managed_pkg(git).
