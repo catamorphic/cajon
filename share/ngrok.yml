@@ -1,0 +1,10 @@
+tunnels:
+  www:
+    subdomain: "www.jko-catamorphic"
+    proto:
+      http: 8080
+  app:
+    subdomain: "app.jko-catamorphic"
+    proto:
+      http: 9000
+auth_token: 9J3wGud0jq2qIQM8fhHb
